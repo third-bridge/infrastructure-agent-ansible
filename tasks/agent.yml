@@ -59,7 +59,7 @@
 
 - name: install agent
   apt:
-    name: "newrelic-infra{{ nrinfragent_version }}"
+    name: "newrelic-infra"
     state: "{{ nrinfragent_state }}"
     update_cache: yes
   when: nrinfragent_os_name|lower == 'debian'
